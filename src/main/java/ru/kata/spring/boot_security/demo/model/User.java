@@ -17,9 +17,7 @@ import java.util.Collection;
 import java.util.Objects;
 
 @Entity
-@Table(
-        name = "users"
-)
+@Table(name = "users")
 public class User implements UserDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

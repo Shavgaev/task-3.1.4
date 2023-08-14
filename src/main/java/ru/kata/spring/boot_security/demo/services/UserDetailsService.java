@@ -16,7 +16,7 @@ import java.util.stream.Collectors;
 @Service
 public class UserDetailsService implements org.springframework.security.core.userdetails.UserDetailsService {
 
-    private UserRepository userRepository;
+    private final UserRepository userRepository;
 
     @Autowired
     public UserDetailsService(UserRepository userRepository) {
