@@ -4,8 +4,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping(name = "/login")
 public class AuthController {
+    @RequestMapping(name = "/login")
     public String loginPage() {
         return "login";
     }
